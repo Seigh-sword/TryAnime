@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryAnime | Watching</title>
+    <link rel="icon" data-icon="favicon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="watch-page">
+
+    <nav class="navbar">
+        <div class="logo-area" onclick="window.location.href='../home/'">
+            <img data-icon="logo" class="main-logo">
+            <span class="brand-name">TryAnime</span>
+        </div>
+        <form action="../search/" method="GET" class="search-box">
+            <input type="text" name="keyword" placeholder="Search another...">
+            <button type="submit"><img data-icon="search"></button>
+        </form>
+    </nav>
+
+    <main class="watch-layout">
+        <section class="player-container">
+            <div id="video-frame" class="video-aspect">
+                <div class="loader-spinner"></div>
+            </div>
+            
+            <div class="video-meta">
+                <div class="title-row">
+                    <h1 id="anime-title">Loading Title...</h1>
+                    <div class="interaction-buttons">
+                        <button id="fav-toggle" class="btn-icon">
+                            <img data-icon="heart" id="heart-img">
+                        </button>
+                        <button id="star-toggle" class="btn-icon">
+                            <img data-icon="star" id="star-img">
+                        </button>
+                    </div>
+                </div>
+                <div class="info-strip">
+                    <span id="anime-rating" class="badge">---</span>
+                    <span id="anime-status">---</span>
+                    <span id="anime-score">---</span>
+                </div>
+                <p id="anime-synopsis" class="synopsis-text"></p>
+            </div>
+        </section>
+
+        <aside class="recommendations">
+            <h3>More Like This</h3>
+            <div id="rec-list" class="mini-grid"></div>
+        </aside>
+    </main>
+
+    <script type="module" src="watch.js"></script>
+</body>
+</html>

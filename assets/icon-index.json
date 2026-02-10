@@ -1,0 +1,16 @@
+{
+  "search": "assets/icons/search.svg",
+  "filter": "assets/icons/filter.svg",
+  "clearFilter": "assets/icons/clear-filter.svg",
+  "play": "assets/icons/play.svg",
+  "pause": "assets/icons/pause.svg",
+  "forward": "assets/icons/forward.svg",
+  "backward": "assets/icons/backward-svgrepo-com.svg",
+  "heart": "assets/icons/heart.svg",
+  "heartActive": "assets/icons/heart-enabled.svg",
+  "star": "assets/icons/watchlist.svg",
+  "starActive": "assets/icons/watchlist-enabled.svg",
+  "logo": "assets/Icon.png",
+  "favicon": "assets/Favion.ico",
+  "home": "assets/icons/home.svg"
+}

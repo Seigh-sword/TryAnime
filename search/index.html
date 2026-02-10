@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TryAnime! | Search</title>
+    <link rel="icon" data-icon="favicon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="search-page">
+
+    <nav class="navbar">
+        <div class="logo-area" onclick="window.location.href='../home/'">
+            <img data-icon="logo" class="main-logo">
+            <span class="brand-name">TryAnime</span>
+        </div>
+        
+        <form action="./" method="GET" class="search-box">
+            <input type="text" name="keyword" id="search-input" placeholder="Search for anime..." required>
+            <button type="submit">
+                <img data-icon="search">
+            </button>
+        </form>
+    </nav>
+
+    <div class="search-layout">
+        <aside class="filter-sidebar">
+            <div class="filter-group">
+                <h3><img data-icon="filter" class="inline-icon"> Age Rating</h3>
+                <div class="filter-list">
+                    <a href="?age=g" class="filter-item">G - Suitable for All Ages</a>
+                    <a href="?age=pg" class="filter-item">PG - kids</a>
+                    <a href="?age=pg13" class="filter-item">PG-13 - Teens</a>
+                    <a href="?age=r" class="filter-item">R - 17+</a>
+                    <a href="?age=r+" class="filter-item">R+ - Hentai</a>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <a href="./" class="clear-all">
+                    <img data-icon="clearFilter" class="inline-icon"> Clear All Filters
+                </a>
+            </div>
+        </aside>
+
+        <main class="results-container">
+            <div class="results-header">
+                <h2 id="search-query-text">Search Results</h2>
+                <span id="results-count">0 items found</span>
+            </div>
+            <div id="search-grid" class="anime-grid">
+                </div>
+        </main>
+    </div>
+
+    <script type="module" src="search.js"></script>
+</body>
+</html>
