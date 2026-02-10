@@ -1,0 +1,20 @@
+{
+  "navigation": {
+ ons/pause.svg",
+    "forward": "assets/ico   "search": "assets/icons/search.svg",
+    "filter": "assets/icons/filter.svg",
+    "clearFilter": "assets/icons/clear-filter.svg"
+  },
+  "player": {
+    "play": "assets/icons/play.svg",
+    "pause": "assets/icns/forward.svg",
+    "backward": "assets/icons/backward-svgrepo-com.svg"
+  }
+}  },
+  "interaction": {
+    "heart": "assets/icons/heart.svg",
+    "heartActive": "assets/icons/heart-enabled.svg"
+  },
+  "brand": {
+    "logo": "assets/Icon.png",
+    "favicon": "assets/Favion.ico"
